@@ -1,0 +1,78 @@
+:root{
+    --blanco:#ffffff;
+    --oscuro:#000000;
+    --primario: #ff4500;
+    --secundario:#3f5266;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*** font-size: 62.5%; Codigo para que se adapte los rem en todo tipo de pantalla ***/
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-size: 16px;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+/*************************************/
+i{
+color: #ff4500;
+align-items: center !important;
+}
+p{
+    font-family: 'Comfortaa', cursive;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    color:var(--primario)
+}
+
+main .contenedor{
+    max-width:1000px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+}
+.card{
+    background-color: var(--oscuro);
+    flex-grow: 1;
+    height: 220px;
+    width: 200px;
+    margin: 50px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;   
+}
+
+.box{
+    background-color: var(--primario);
+    flex-grow: 1;
+    height: 100px;
+    width: 100px;
+    margin: 0 40px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--oscuro);
+    
+}
+.box i {
+    color:var(--oscuro)
+}
+.box p {
+    color:var(--oscuro);
+    font-size: 1.8rem;
+}
