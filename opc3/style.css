@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+:root{
+    --blanco:#ffffff;
+    --oscuro:#000000;
+    --primario: #ff4500;
+    --secundario:#3f5266;
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+/*** font-size: 62.5%; Codigo para que se adapte los rem en todo tipo de pantalla ***/
+html{
+    font-size: 62.5%;
+   
+}
+
+
+body{
+    font-size: 16px;
+    
+    
+}
+header{
+    margin-bottom: 20px;
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+   
+}
+nav ul li a{
+    color: var(--blanco);
+    text-transform:uppercase;
+    text-decoration: none;  
+}
+nav ul li:hover{
+    background-color: var(--primario);
+    color: var(--blanco);
+    cursor: pointer;
+}
+nav ul li{
+    border-right: 1px solid #fff;
+    list-style-type: none;
+    background-color: black;
+    padding: 15px;
+    padding: 15px 170px
+}
+
+.box p{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3rem;
+    text-align: center;
+    color:var(--secundario);
+    padding: 30px;
+}
+
+.box .tag {
+    display: flex;
+    justify-content: space-between;
+}
+.box .tag p{
+    padding: 7px;
+    background-color: var(--oscuro);
+    color: var(--blanco);
+    border-radius: 10px;
+}
+h1,h2{
+    text-align: center;
+    text-transform: uppercase;   
+    margin-bottom: 25px;
+}
+h2{
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8rem;
+}
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.box{
+    margin: auto 20px 20px;
+}
+.box > *{
+    margin-top: 10px;
+}
+img{
+    width: 60%;
+}
+
+.box button{
+   
+    background-color: var(--primario);
+    width: 100%;
+    border-radius: 5px;
+    border: 0px;
+    padding: 10px;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 10px;
+    margin: 0 50px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+i{
+    color:var(--blanco);
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:480px){
+   .contenedor {
+       flex-direction: column;
+   }
+   .box{
+    width: 100% !important;
+    padding: 5px;
+   }
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:900px){
+   
+    .contenedor {
+        flex-direction: column;
+    }
+    .box{
+        width: 100%;
+        padding: 10px;
+    }
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+    }
+  }
